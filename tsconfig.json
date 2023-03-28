@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["dom", "esnext"],
+    "typeRoots": ["../../typings", "../../node_modules/@types"],
+    "strict": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["../../node_modules", "../../typings"]
+}
