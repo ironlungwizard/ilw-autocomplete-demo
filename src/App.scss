@@ -1,32 +1,111 @@
-.App {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .infoBlockUsecases {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    width: 750px;
-    font-size: 20px;
-    padding: 30px;
+@media only screen and (min-width: 1280px) {
+  .App {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .heroFrame {
+      width: 80vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      .heroFrameHeader {
+        position: absolute;
+        top: 7vh;
+        font-size: 25px;
+        text-align: center;
+      }
+      .scrollDownText {
+        position: absolute;
+        top: 90vh;
+        font-size: 20px;
+      }
+    }
+    .infoFrame {
+      width: 80vw;
+      height: 100vh;
+      gap: 20px;
+      flex-direction: column;
+      display: flex;
+      padding-top: 50px;
+      .infoBlockFunc {
+        width: 99%;
+        font-size: 20px;
+        .funcBlockHeader {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+      }
+      .infoBlockDev {
+        width: 99%;
+        font-size: 20px;
+        .devBlockHeader {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+      }
+      .infoBlockProps {
+        width: 99%;
+        max-width: 500px;
+        font-size: 20px;
+      }
+    }
   }
-  .infoBlockDev {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 750px;
-    font-size: 20px;
-    padding: 30px;
-  }
-  .infoBlockProps {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    width: 500px;
-    font-size: 20px;
-    padding: 30px;
+}
+@media only screen and (max-width: 1279px) {
+  .App {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .heroFrame {
+      width: 80vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      .heroFrameHeader {
+        position: absolute;
+        top: 5vh;
+        font-size: 25px;
+        text-align: center;
+      }
+      .scrollDownText {
+        position: absolute;
+        top: 80vh;
+        font-size: 20px;
+      }
+    }
+    .infoFrame {
+      width: 80vw;
+      height: 100vh;
+      gap: 20px;
+      flex-direction: column;
+      display: flex;
+      padding-top: 20px;
+      .infoBlockFunc {
+        width: 99%;
+        font-size: 20px;
+        .funcBlockHeader {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .infoBlockDev {
+      width: 99%;
+      font-size: 20px;
+      .devBlockHeader {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+    .infoBlockProps {
+      width: 99%;
+      max-width: 500px;
+      font-size: 20px;
+    }
   }
 }
 
